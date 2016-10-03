@@ -20,3 +20,12 @@ body {
     height: 200px;
 }
 
+.anim {
+-webkit-animation:shakemeup 900ms infinite alternate;
+        margin-top:30px;
+	color:#f2da5b;
+	font-family:"Jolly Lodger",cursive;
+	font-size:50px;
+	text-align:center;
+}
+
