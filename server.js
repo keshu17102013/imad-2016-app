@@ -35,10 +35,8 @@ var articles = {
 	     date: 'Sep.30,2016',
 	  content:'<p> This is the Content for my third article.This is the Content for my third article.</p>'
   },
-				       
-	
-   
-}
+				      
+};
 function createTemplate(data) {
 var title        = data.title;	
 var heading      = data.heading;	
@@ -75,8 +73,8 @@ return htmlTemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article-one', function (req, res) {
-  res.send(createTemplate(articleone));
+app.get('/:articleName', function (req, res) {
+  res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/article-two', function (req, res) {
