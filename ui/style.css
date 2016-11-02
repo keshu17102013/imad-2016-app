@@ -31,10 +31,10 @@ body {
 @-webkit-keyframes shakemeup{
 	from{
 		text-shadow:0 4px 0 black,-2px -2px 0 #333,-3px -3px 0 #f2da5b;
-		-webkit-transform:rotate(1deg) translateX(1px) translateY(1px);
+		transform:rotate(1deg) translateX(1px) translateY(1px);
 	}
 	to{
-		-webkit-transform:rotate(-1deg) translateX(-1px) translateY(-1px);
+		transform:rotate(-1deg) translateX(-1px) translateY(-1px);
 		text-shadow:0 1px 0 black, 1px 1px 0 #333, 2px 2px 0 #f2da5b,-3px -5px 0 #333, -4px -6px 0 rgba(242,218,91,0.6);
 		letter-spacing:-2px; word-spacing:12px; font-size:49px;
 	}
