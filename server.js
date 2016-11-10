@@ -7,7 +7,7 @@ var config = {
   database: 'keshu17102013',
   host:'db.imad.hasura-app.io',
   port:'5432',
-  password:'db-keshu17102013-38423'
+  password:process.env.DB_PASSWORD
 };
 
 
