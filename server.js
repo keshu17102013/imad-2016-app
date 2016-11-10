@@ -5,7 +5,7 @@ var Pool = require('pg').Pool;
 var config = {
   user: 'keshu17102013',
   database: 'keshu17102013',
-  host:'localhost',
+  host:'db.imad.hasura-app.io',
   port:'5432',
   password:'db-keshu17102013-38423'
 };
@@ -85,10 +85,11 @@ app.get('/', function (req, res) {
 app.get('/:articleName', function (req, res) {
   var articleName = req.params. articleName;  
   res.send(createTemplate(articles[articleName]));
-});;
+});
+
 var pool = new Pool(config);
 
-app.get('/test', function (req, res){
+app.get('/testdb', function (req, res){
     //make a select request
     //return a response
     pool.query("SELECT*FROM 'test'",function(err,result){
