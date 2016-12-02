@@ -52,7 +52,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/signup.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'signup.html'));
+  res.sendFile(path.join(__dirname, 'ui', '/signup.html'));
 });
 
 var pool = new Pool(config);
