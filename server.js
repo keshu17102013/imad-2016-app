@@ -2,6 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
+var bodyparser = require('body-parser');
 var config = {
   user: 'keshu17102013',
   database: 'keshu17102013',
