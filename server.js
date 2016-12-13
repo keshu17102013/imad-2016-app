@@ -42,6 +42,10 @@ app.get('/testdb', function (req, res){
     });
     
 });
+app.post('/signup',function(req,res){
+    console.log("hai");
+}
+);
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
