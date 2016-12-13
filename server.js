@@ -43,7 +43,7 @@ app.get('/testdb', function (req, res){
     
 });
 app.post('/signup',function(req,res){
-    console.log("hai");
+    
 }
 );
 
