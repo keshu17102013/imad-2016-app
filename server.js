@@ -43,7 +43,9 @@ app.get('/testdb', function (req, res){
     
 });
 app.post('/signup',function(req,res){
-    res.send('Hai');
+    
+    var name = req.body.name;
+    res.send(name);
 }
 );
 
