@@ -44,7 +44,7 @@ app.get('/testdb', function (req, res){
     });
     
 });
-app.post('/signup', urlencodedparser, function(req,res){
+app.post('/signup', function(req,res){
     var fame = req.body.name;
     
     
