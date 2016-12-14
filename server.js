@@ -45,7 +45,8 @@ app.get('/testdb', function (req, res){
     
 });
 app.post('/signup', function(req,res){
-    var fame = req.body.name;
+    var nameInput = document.getElementById('name');
+    var name = nameInput.value;
     
     
 }
