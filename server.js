@@ -44,10 +44,9 @@ app.get('/testdb', function (req, res){
     });
     
 });
- var nameInput = document.getElementById('name');
- var fname = nameInput.value;
+ 
 app.post('/signup', function(req,res){
-   res.send(fname);
+   
     
     
 }
